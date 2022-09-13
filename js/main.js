@@ -27,6 +27,9 @@ thumbBar.appendChild(newImage);
 
 //for every pic in imgFolder
 for(pic of imgFolder) {
+// creates let vars for changing displayed image src/alt
+    let displayedSrc = pic.src.textContent;
+    let displayedAlt = pic.alt.textContent;
 //use const newImage to create an img element with attributes
     newImage;
 //replace the src xxx with the true file path to spacific picture in array imgFolder
@@ -37,9 +40,9 @@ for(pic of imgFolder) {
     newImage.addEventListener('click', => (
 // find the value of src attribute of current target
 // set the src attribute value of the 'displayed-img'<img> to the src passed in as a parameter
-        displayedImage.setAttribute('src', pic.src.textContent);
+        displayedImage.setAttribute('src', displayedSrc);
 // do the same for the alt attribute
-        displayedImage.setAttribute('alt', pic.alt.textContent);
+        displayedImage.setAttribute('alt', displayedAlt);
         )
     ); 
 }
