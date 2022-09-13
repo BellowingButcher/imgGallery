@@ -24,6 +24,22 @@ newImage.setAttribute('alt', xxx);
 thumbBar.appendChild(newImage);
 
 
+
+//for every pic in imgFolder
+for(pic of imgFolder) {
+//use const newImage to create an img element with attributes
+    newImage;
+//replace the src xxx with the true file path to spacific picture in array imgFolder
+    newImage.src.replace(xxx, pic.src);
+//replace the alt xxx with the true file path to spacific alt text in array altText
+    newImage.alt.replace(xxx, pic.alt);
+
+}
+
+
+
+
+
 /* 
 Add click event listener to each img inside the thumb-bar div
 When clicked, the corresponding image and alt text are displayed in the 
