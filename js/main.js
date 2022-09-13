@@ -59,11 +59,5 @@ Add click event listener to the <button>
 When clicked the darken effect is applied to the full-size image.
 When clicked again the darken effect is removed.
 */
-/* THIS IS COMMENTED SO I CAN DEBUGG EARLIER STUFF
-const newImage = document.createElement('img');
-newImage.setAttribute('src', xxx);
-newImage.setAttribute('alt', xxx);
-thumbBar.appendChild(newImage);
-*******
-*/
+
 /* Wiring up the Darken/Lighten button */
