@@ -7,6 +7,9 @@ const overlay = document.querySelector('.overlay');
 /* Declaring the array of image filenames */
 const imgFileNames = ['pic1.jpg', 'pic2.jpg', 'pic3.jpg', 'pic4.jpg', 'pic5.jpg' ];
 
+for (img of imgFileNames) {
+    console.log(img);
+}
 /* Declaring the alternative text for each image file */
 
 /* Looping through images */
