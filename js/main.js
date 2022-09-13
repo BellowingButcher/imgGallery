@@ -30,16 +30,18 @@ for(pic of imgFolder) {
 //use const newImage to create an img element with attributes
     newImage;
 //replace the src xxx with the true file path to spacific picture in array imgFolder
-    newImage.src.replace(xxx, pic.src);
+    newImage.src.replace('xxx', pic.src);
 //replace the alt xxx with the true file path to spacific alt text in array altText
-    newImage.alt.replace(xxx, pic.alt);
+    newImage.alt.replace('xxx', pic.alt);
 //add event listener to each newImage
-    newImage.addEventListener('click', =>
+    newImage.addEventListener('click', => (
 // find the value of src attribute of current target
-    
 // set the src attribute value of the 'displayed-img'<img> to the src passed in as a parameter
+        displayedImage.setAttribute('src', pic.src.textContent);
 // do the same for the alt attribute
-); 
+        displayedImage.setAttribute('alt', pic.alt.textContent);
+        )
+    ); 
 }
 
 
