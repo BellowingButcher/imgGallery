@@ -33,6 +33,8 @@ for(pic of imgFolder) {
     newImage.src.replace(xxx, pic.src);
 //replace the alt xxx with the true file path to spacific alt text in array altText
     newImage.alt.replace(xxx, pic.alt);
+//add event listener to each newImage
+    newImage.addEventListener('click', ); 
 
 }
 
