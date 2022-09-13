@@ -29,3 +29,10 @@ button {
     background: rgba(150,150,150,0.6);
     text-shadow: 1px 1px 1px white;
 }
+
+.thumbBar {
+    display: block;
+    width: 20%;
+    float: left;
+    cursor: pointer;
+}
