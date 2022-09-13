@@ -7,11 +7,15 @@ const overlay = document.querySelector('.overlay');
 /* Declaring the array of image filenames */
 const imgFolder = ['pic1.jpg', 'pic2.jpg', 'pic3.jpg', 'pic4.jpg', 'pic5.jpg'];
 
+/*declaring the array of alt text for each image in img folder*/
+
 const altText = ['Blue human eye', 'Aerial photo of sand dunes', 'Purple flowers', 'Egyptian hieroglyphics', 'Orange butterfly on a green leaf'];
 
-/*declaring the array of alt text for each image in img folder*/
-//For each item in the array of imgFileNames add atribute alt
-//in each item alt atribute add alt text found in imgAltText
+//For each item in the array of imgFolder add atribute alt
+//in each item alt atribute add alt text found in altText
+for (pic of imgFolder) {
+    Element.setAttribute(alt, altText)
+}
 
 /*
 -This function will take an input from the array of imgFileNames
