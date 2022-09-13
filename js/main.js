@@ -5,11 +5,27 @@ const btn = document.querySelector('button');
 const overlay = document.querySelector('.overlay');
 
 /* Declaring the array of image filenames */
-const imgFileNames = ['pic1.jpg', 'pic2.jpg', 'pic3.jpg', 'pic4.jpg', 'pic5.jpg' ];
-
-for (img of imgFileNames) {
-    console.log(img);
+//I want to get the file names of images inside of the folder img
+//put the names of each image in an array inside the const imgFileNames
+function getImgName () {
+    
 }
+/*declaring the array of alt text for each image in img folder*/
+//For each item in the array of imgFileNames add atribute alt
+//in each item alt atribute add alt text found in imgAltText
+
+/*
+-This function will take an input from the array of imgFileNames
+-Create an img element inside of the thumb-bar div
+-embed picture and also add alt text from the imgAltText
+*/
+
+
+/*
+for (img of imgFileNames) {
+    
+}
+*/
 /* Declaring the alternative text for each image file */
 
 /* Looping through images */
