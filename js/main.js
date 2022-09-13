@@ -10,28 +10,25 @@ const imgFolder = ['pic1.jpg', 'pic2.jpg', 'pic3.jpg', 'pic4.jpg', 'pic5.jpg'];
 /*declaring the array of alt text for each image in img folder*/
 
 const altText = ['Blue human eye', 'Aerial photo of sand dunes', 'Purple flowers', 'Egyptian hieroglyphics', 'Orange butterfly on a green leaf'];
-
-//For each item in the array of imgFolder add atribute alt
-//in each item alt atribute add alt text found in altText
-for (pic of imgFolder) {
-    Element.setAttribute(alt, altText)
-}
-
 /*
--This function will take an input from the array of imgFileNames
--Create an img element inside of the thumb-bar div
--embed picture and also add alt text from the imgAltText
+Loop through the array of imgFolder
+    for each pic
+        insert img element inside thumb-bar <div> 
+        (the documentation says this should embed that picture along with its alt text into the
+        page)
 */
 
+/* 
+Add click event listener to each img inside the thumb-bar div
+When clicked, the corresponding image and alt text are displayed in the 
+'displayed-img' <img> element
+*/
 
 /*
-for (img of imgFileNames) {
-    
-}
+Add click event listener to the <button>
+When clicked the darken effect is applied to the full-size image.
+When clicked again the darken effect is removed.
 */
-/* Declaring the alternative text for each image file */
-
-/* Looping through images */
 
 const newImage = document.createElement('img');
 newImage.setAttribute('src', xxx);
