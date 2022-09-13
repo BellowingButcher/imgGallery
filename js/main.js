@@ -5,11 +5,10 @@ const btn = document.querySelector('button');
 const overlay = document.querySelector('.overlay');
 
 /* Declaring the array of image filenames */
-//I want to get the file names of images inside of the folder img
-//put the names of each image in an array inside the const imgFileNames
-function getImgName () {
-    
-}
+const imgFolder = ['pic1.jpg', 'pic2.jpg', 'pic3.jpg', 'pic4.jpg', 'pic5.jpg'];
+
+const altText = ['Blue human eye', 'Aerial photo of sand dunes', 'Purple flowers', 'Egyptian hieroglyphics', 'Orange butterfly on a green leaf'];
+
 /*declaring the array of alt text for each image in img folder*/
 //For each item in the array of imgFileNames add atribute alt
 //in each item alt atribute add alt text found in imgAltText
