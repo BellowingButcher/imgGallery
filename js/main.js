@@ -68,7 +68,7 @@ function dimmer {
 // Then run this; set buttons text content to lighten
         btn.setTextContent('Lighten');
 // Then change the const overlay background color to red,green,blue,???
-        overlay background-color : rgba(0, 0, 0, 0);
+        overlay.style.backgroundcolor = rgba(0, 0, 0, 0);
     }
 
 }
