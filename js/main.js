@@ -18,10 +18,7 @@ Loop through the array of imgFolder
         (the documentation says this should embed that picture along with its alt text into the
         page)
 */
-const newImage = document.createElement('img');
-newImage.setAttribute('src', 'xxx');
-newImage.setAttribute('alt', 'xxx');
-thumbBar.appendChild(newImage);
+
 
 /* 
 Add click event listener to each img inside the thumb-bar div
@@ -36,7 +33,8 @@ for(pic of imgArray) {
     let displayedSrc = pic
     let displayedAlt = pic;
 //use const newImage to create an img element with attributes
-    newImage;
+const newImage = document.createElement('img');
+thumbBar.appendChild(newImage);
 //replace the src xxx with the true file path to spacific picture in array imgFolder
     newImage.setAttribute('src', '/img/' + displayedSrc);
 //replace the alt xxx with the true file path to spacific alt text in array altText
