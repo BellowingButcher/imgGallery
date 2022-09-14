@@ -59,6 +59,11 @@ When clicked the darken effect is applied to the full-size image.
 When clicked again the darken effect is removed.
 */
 
+// delcares the dimmer function
+function dimmer {
+
+}
+
 //adds event listener to dimmer button
 btn.addEventListener('click');
 
