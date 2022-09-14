@@ -23,6 +23,11 @@ newImage.setAttribute('src', 'xxx');
 newImage.setAttribute('alt', 'xxx');
 thumbBar.appendChild(newImage);
 
+/* 
+Add click event listener to each img inside the thumb-bar div
+When clicked, the corresponding image and alt text are displayed in the 
+'displayed-img' <img> element
+*/
 
 
 //for every pic in imgFolder
@@ -48,19 +53,13 @@ for(pic of imgFolder) {
 }
 
 
-
-
-
-/* 
-Add click event listener to each img inside the thumb-bar div
-When clicked, the corresponding image and alt text are displayed in the 
-'displayed-img' <img> element
-*/
-
 /*
 Add click event listener to the <button>
 When clicked the darken effect is applied to the full-size image.
 When clicked again the darken effect is removed.
 */
+
+//adds event listener to dimmer button
+btn.addEventListener('click');
 
 /* Wiring up the Darken/Lighten button */
