@@ -61,10 +61,19 @@ When clicked again the darken effect is removed.
 
 // delcares the dimmer function
 function dimmer {
+//starts if statement. If the buttons class is equil to 'dark'
+    if (btn.getAttribute(class) === 'dark') {
+// Then run this; set buttons attribute class = light
+        btn.setAttribute('class', 'light');
+// Then run this; set buttons text content to lighten
+        btn.setTextContent('Lighten');
+// Then change the const overlay background color to red,green,blue,???
+        overlay background-color : rgba(0, 0, 0, 0);
+    }
 
 }
 
 //adds event listener to dimmer button
-btn.addEventListener('click');
+btn.addEventListener('click', dimmer);
 
 /* Wiring up the Darken/Lighten button */
