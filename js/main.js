@@ -5,7 +5,7 @@ const btn = document.querySelector('button');
 const overlay = document.querySelector('.overlay');
 
 /* Declaring the array of image filenames */
-const imgFolder = ['pic1.jpg', 'pic2.jpg', 'pic3.jpg', 'pic4.jpg', 'pic5.jpg'];
+const imgArray = ['pic1.jpg', 'pic2.jpg', 'pic3.jpg', 'pic4.jpg', 'pic5.jpg'];
 
 /*declaring the array of alt text for each image in img folder*/
 
@@ -30,26 +30,26 @@ When clicked, the corresponding image and alt text are displayed in the
 */
 
 
-//for every pic in imgFolder
-for(pic of imgFolder) {
+//for every pic as a string in imgFolder
+for(pic of imgArray) {
 // creates let vars for changing displayed image src/alt
-    let displayedSrc = pic.src.textContent;//or pic.getAttribute(src);
-    let displayedAlt = pic.alt.textContent;//or pic.getAttribute(alt);
+    let displayedSrc = pic
+    let displayedAlt = pic;
 //use const newImage to create an img element with attributes
     newImage;
 //replace the src xxx with the true file path to spacific picture in array imgFolder
-    newImage.src.replace('xxx', pic.src);
+    newImage.setAttribute('src', '/img/' + displayedSrc);
 //replace the alt xxx with the true file path to spacific alt text in array altText
-    newImage.alt.replace('xxx', pic.alt);
+    newImage.setAttribute('alt', displayedAlt);
 //add event listener to each newImage
-    newImage.addEventListener('click', => (
+    newImage.addEventListener('click', (ev) => {
+        console.log(ev);
 // find the value of src attribute of current target
 // set the src attribute value of the 'displayed-img'<img> to the src passed in as a parameter
         displayedImage.setAttribute('src', displayedSrc);
 // do the same for the alt attribute
         displayedImage.setAttribute('alt', displayedAlt);
-        )
-    ); 
+    });
 }
 
 
@@ -60,9 +60,9 @@ When clicked again the darken effect is removed.
 */
 
 // delcares the dimmer function
-function dimmer {
+function dimmer () {
 //starts if statement. If the buttons class is equil to 'dark'
-    if (btn.getAttribute(class) === 'dark') {
+    if (btn.getAttribute('class') === 'dark') {
 // Then run this; set buttons attribute class = light
         btn.setAttribute('class', 'light');
 // Then run this; set buttons text content to lighten
@@ -73,7 +73,7 @@ function dimmer {
     }
 //after last if statement the function goes to the next if statment
 
-    if (btn.getAttribute(class) !== 'dark') {
+    if (btn.getAttribute('class') !== 'dark') {
 //then changes class of button to dark
         btn.setAttribute('class', 'dark');
 //Then sets the buttons text to darken
@@ -84,6 +84,5 @@ function dimmer {
 }
 
 //adds event listener to dimmer button
-btn.addEventListener('click', dimmer);
 
 /* Wiring up the Darken/Lighten button */
