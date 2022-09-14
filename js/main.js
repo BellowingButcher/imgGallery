@@ -69,8 +69,18 @@ function dimmer {
         btn.setTextContent('Lighten');
 // Then change the const overlay background color to red,green,blue,???
         overlay.style.backgroundcolor = rgba(0, 0, 0, 0.5);
+    
     }
+//after last if statement the function goes to the next if statment
 
+    if (btn.getAttribute(class) !== 'dark') {
+//then changes class of button to dark
+        btn.setAttribute('class', 'dark');
+//Then sets the buttons text to darken
+        btn.setTextContent('darken');
+//Then changes the overlay background color
+        overlay.style.backgroundcolor = rgba(0, 0, 0, 0, 0);
+    }
 }
 
 //adds event listener to dimmer button
