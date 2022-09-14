@@ -28,8 +28,8 @@ thumbBar.appendChild(newImage);
 //for every pic in imgFolder
 for(pic of imgFolder) {
 // creates let vars for changing displayed image src/alt
-    let displayedSrc = pic.src.textContent;
-    let displayedAlt = pic.alt.textContent;
+    let displayedSrc = pic.src.textContent;//or pic.getAttribute(src);
+    let displayedAlt = pic.alt.textContent;//or pic.getAttribute(alt);
 //use const newImage to create an img element with attributes
     newImage;
 //replace the src xxx with the true file path to spacific picture in array imgFolder
