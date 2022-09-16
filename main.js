@@ -21,6 +21,7 @@ newImage.setAttribute('alt', newAlt);
 thumbBar.appendChild(newImage);
 
 }
+
 thumbBar.addEventListener('click', () => {
     /*bigImage = document.querySelector('#displayed-img');
     bigImage.setAttribute('src', EventTarget);
@@ -28,3 +29,11 @@ thumbBar.addEventListener('click', () => {
     document.querySelector('#displayed-img').setAttribute('src', EventTarget);
 })
 /* Wiring up the Darken/Lighten button */
+btn.addEventListener('click', () => {
+
+    if (btn.getAttribute('class') === 'dark') {
+        btn.setAttribute('class', 'light');
+        btn.textContent('Lighten');
+        overlay.style.background-color = rgba(0,0,0,0);
+    }
+})
