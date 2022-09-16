@@ -21,6 +21,10 @@ newImage.setAttribute('alt', newAlt);
 thumbBar.appendChild(newImage);
 
 }
+thumbBar.addEventListener('click', () => {
+    /*bigImage = document.querySelector('#displayed-img');
+    bigImage.setAttribute('src', EventTarget);
+    bigImage.setAttribute('alt', EventTarget);*/
+    document.querySelector('#displayed-img').setAttribute('src', EventTarget);
+})
 /* Wiring up the Darken/Lighten button */
-
-images/pic1.jpg
